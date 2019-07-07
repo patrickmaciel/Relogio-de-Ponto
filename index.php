@@ -46,9 +46,7 @@
   </thead>
   <tbody>
     <tr>
-      <th scope="row"><?php 
-      $txt->ler()
-      ?></th>
+      <th scope="row"></th>
     </tr>
   </tbody>
 </table>
