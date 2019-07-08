@@ -1,7 +1,6 @@
 <?php
   require_once 'Funcionario.php';
   require_once 'Importar_txt.php';
-  require_once 'processa.php';
   $txt = new Importar_txt;
 ?>
 
@@ -37,7 +36,7 @@
 <table class="table table-bordered">
   <thead>
     <tr>
-      <th scope="col">NIS</th>
+      <th scope="col">NSR</th>
       <th scope="col">Registro</th>
       <th scope="col">Data</th>
       <th scope="col">Hora</th>
@@ -46,7 +45,7 @@
   </thead>
   <tbody>
     <tr>
-      <th scope="row"></th>
+      <th scope="row"><?php $txt->ler()?></th>
     </tr>
   </tbody>
 </table>
