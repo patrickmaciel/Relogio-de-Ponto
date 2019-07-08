@@ -5,8 +5,8 @@ class Importar_txt{
     public function importartxt(){
       if (isset($_FILES['imptxt']['tmp_name'])) { 
         $conteudo = file_get_contents($_FILES['imptxt']['tmp_name']); 
-        //         $a1 = array($conteudo);
-        // print_r($a1);
+        $a1 = array($conteudo);
+        print_r($a1);
         
       } 
         else { 
