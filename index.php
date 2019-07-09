@@ -46,9 +46,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
     <?php $txt->importartxt();?>
-    </tr>
   </tbody>
 </table>
 </div>
