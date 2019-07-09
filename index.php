@@ -27,7 +27,7 @@
 										<label for="import-arquivo" class="txt">Importar TXT</label>
 										<input id="import-arquivo" type='file' name="imptxt" accept=".txt">
        
-										<label for="submit-arquivo" class="txt">Confirmar XML</label>
+										<label for="submit-arquivo" class="txt">Confirmar TXT</label>
 										<input type="submit" id="submit-arquivo" name="confirmatxt" value="Confirmar Importação"><br>			
 </form>
 <?php
