@@ -42,13 +42,12 @@ td {
 /* Esconde o input */
 
 input[type='file']{
-    display: none;
+     display: none; 
   }
  
 #submit-arquivo{
     display: none;
 }
-
 
   /* Aparência que terá o seletor de arquivo */
 .txt {
@@ -63,7 +62,8 @@ input[type='file']{
   }
 
   .exportar {
-    background-color: rgb(0, 230, 19);
+    background-color: rgb(14, 185, 23);
+    border: none;
     border-radius: 5px;
     color: #fff;
     cursor: pointer;
@@ -72,3 +72,5 @@ input[type='file']{
     flex: 1;
     display: inline-flex;
   }
+
+
