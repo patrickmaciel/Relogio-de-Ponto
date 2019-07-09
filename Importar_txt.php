@@ -3,10 +3,13 @@
 class Importar_txt{
 
     public function importartxt(){
-      if (isset($_FILES['imptxt']['tmp_name'])) { 
-        $conteudo = file_get_contents($_FILES['imptxt']['tmp_name']); 
+     // if (isset($_FILES['imptxt']['tmp_name'])) { 
+       // $conteudo = file_get_contents($_FILES['imptxt']['tmp_name']); 
+       if(!empty($_FILES['imptxt']['tmp_name']) 
+       && file_exists($_FILES['imptxt']['tmp_name'])) {
+        $conteudo = addslashes(file_get_contents($_FILES['imptxt']['tmp_name']));
         $array = array_filter(explode("\n", $conteudo)); //le ate o final da linha
-       // print_r($array);
+        // print_r($array);
         foreach ($array as $key => $valor) {
           if(substr($valor, 9, 1) == 3){
             $funcionario = new Funcionario;
@@ -46,10 +49,6 @@ class Importar_txt{
         } 
     
     }
-
-
-  
-
 }
 
 ?>
