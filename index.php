@@ -1,6 +1,8 @@
 <?php
   require_once 'Funcionario.php';
   require_once 'Importar_txt.php';
+  require_once 'conexao.php';
+  $conn = new conexao;
   $txt = new Importar_txt;
 ?>
 
@@ -31,7 +33,7 @@
 										<input type="submit" id="submit-arquivo" name="confirmatxt" value="Confirmar Importação"><br>			
 </form>
 <?php
-
+$conn->getConnection();
 ?>
 
 
